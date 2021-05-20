@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: i2c_master_bit_ctrl</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_i2c_master_bit_ctrl'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_i2c_master_bit_ctrl')">i2c_master_bit_ctrl</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.29</td>
+<td class="s10 cl rt"><a href="mod5.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod5.html#Cond" > 87.50</a></td>
+<td class="s9 cl rt"><a href="mod5.html#Branch" > 98.36</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/auto/vgr/users/dvoynish_n/svn/labs/i2c/rtl/verilog/i2c_master_bit_ctrl.v')">/auto/vgr/users/dvoynish_n/svn/labs/i2c/rtl/verilog/i2c_master_bit_ctrl.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod5.html#inst_tag_5"  onclick="showContent('inst_tag_5')">i2c_top.DUT.byte_controller.bit_controller</a></td>
+<td class="s9 cl rt"> 95.29</td>
+<td class="s10 cl rt"><a href="mod5.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod5.html#Cond" > 87.50</a></td>
+<td class="s9 cl rt"><a href="mod5.html#Branch" > 98.36</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_i2c_master_bit_ctrl'>
+<hr>
+<a name="inst_tag_5"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_5" >i2c_top.DUT.byte_controller.bit_controller</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.29</td>
+<td class="s10 cl rt"><a href="mod5.html#Line" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod5.html#Cond" > 87.50</a></td>
+<td class="s9 cl rt"><a href="mod5.html#Branch" > 98.36</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.29</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s9 cl rt"> 98.36</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s9 cl rt"> 98.44</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s9 cl rt"> 96.88</td>
+<td><a href="mod7.html#inst_tag_7" >byte_controller</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td colspan=5>no children</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_i2c_master_bit_ctrl'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod5.html" >i2c_master_bit_ctrl</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">TOTAL</td><td></td><td>175</td><td>175</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>194</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>199</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>209</td><td>11</td><td>11</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>236</td><td>8</td><td>8</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>255</td><td>7</td><td>7</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>262</td><td>9</td><td>9</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>281</td><td>14</td><td>14</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>311</td><td>8</td><td>8</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>330</td><td>5</td><td>5</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>341</td><td>6</td><td>6</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>349</td><td>5</td><td>5</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>359</td><td>2</td><td>2</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>385</td><td>96</td><td>96</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+193                         always @(posedge clk)
+194        1/1                dscl_oen &lt;= #1 scl_oen;
+195                     
+196                         // slave_wait is asserted when master wants to drive SCL high, but the slave pulls it low
+197                         // slave_wait remains asserted until the slave releases SCL
+198                         always @(posedge clk or negedge nReset)
+199        2/2                if (!nReset) slave_wait &lt;= 1'b0;
+200        1/1                else         slave_wait &lt;= (scl_oen &amp; ~dscl_oen &amp; ~sSCL) | (slave_wait &amp; ~sSCL);
+201                     
+202                         // master drives SCL high, but another master pulls it low
+203                         // master start counting down its low cycle now (clock synchronization)
+204                         wire scl_sync   = dSCL &amp; ~sSCL &amp; scl_oen;
+205                     
+206                     
+207                         // generate clk enable signal
+208                         always @(posedge clk or negedge nReset)
+209        1/1                if (~nReset)
+210                           begin
+211        1/1                    cnt    &lt;= #1 16'h0;
+212        1/1                    clk_en &lt;= #1 1'b1;
+213                           end
+214        1/1                else if (rst || ~|cnt || !ena || scl_sync)
+215                           begin
+216        1/1                    cnt    &lt;= #1 clk_cnt;
+217        1/1                    clk_en &lt;= #1 1'b1;
+218                           end
+219        1/1                else if (slave_wait)
+220                           begin
+221        1/1                    cnt    &lt;= #1 cnt;
+222        1/1                    clk_en &lt;= #1 1'b0;    
+223                           end
+224                           else
+225                           begin
+226        1/1                    cnt    &lt;= #1 cnt - 16'h1;
+227        1/1                    clk_en &lt;= #1 1'b0;
+228                           end
+229                     
+230                     
+231                         // generate bus status controller
+232                     
+233                         // capture SDA and SCL
+234                         // reduce metastability risk
+235                         always @(posedge clk or negedge nReset)
+236        1/1                if (!nReset)
+237                           begin
+238        1/1                    cSCL &lt;= #1 2'b00;
+239        1/1                    cSDA &lt;= #1 2'b00;
+240                           end
+241        1/1                else if (rst)
+242                           begin
+243        1/1                    cSCL &lt;= #1 2'b00;
+244        1/1                    cSDA &lt;= #1 2'b00;
+245                           end
+246                           else
+247                           begin
+248        1/1                    cSCL &lt;= {cSCL[0],scl_i};
+249        1/1                    cSDA &lt;= {cSDA[0],sda_i};
+250                           end
+251                     
+252                     
+253                         // filter SCL and SDA signals; (attempt to) remove glitches
+254                         always @(posedge clk or negedge nReset)
+255        2/2                if      (!nReset     ) filter_cnt &lt;= 14'h0;
+256        2/2                else if (rst || !ena ) filter_cnt &lt;= 14'h0;
+257        2/2                else if (~|filter_cnt) filter_cnt &lt;= clk_cnt &gt;&gt; 2; //16x I2C bus frequency
+258        1/1                else                   filter_cnt &lt;= filter_cnt -1;
+259                     
+260                     
+261                         always @(posedge clk or negedge nReset)
+262        1/1                if (!nReset)
+263                           begin
+264        1/1                    fSCL &lt;= 3'b111;
+265        1/1                    fSDA &lt;= 3'b111;
+266                           end
+267        1/1                else if (rst)
+268                           begin
+269        1/1                    fSCL &lt;= 3'b111;
+270        1/1                    fSDA &lt;= 3'b111;
+271                           end
+272        1/1                else if (~|filter_cnt)
+273                           begin
+274        1/1                    fSCL &lt;= {fSCL[1:0],cSCL[1]};
+275        1/1                    fSDA &lt;= {fSDA[1:0],cSDA[1]};
+276                           end
+                        MISSING_ELSE
+277                     
+278                     
+279                         // generate filtered SCL and SDA signals
+280                         always @(posedge clk or negedge nReset)
+281        1/1                if (~nReset)
+282                           begin
+283        1/1                    sSCL &lt;= #1 1'b1;
+284        1/1                    sSDA &lt;= #1 1'b1;
+285                     
+286        1/1                    dSCL &lt;= #1 1'b1;
+287        1/1                    dSDA &lt;= #1 1'b1;
+288                           end
+289        1/1                else if (rst)
+290                           begin
+291        1/1                    sSCL &lt;= #1 1'b1;
+292        1/1                    sSDA &lt;= #1 1'b1;
+293                     
+294        1/1                    dSCL &lt;= #1 1'b1;
+295        1/1                    dSDA &lt;= #1 1'b1;
+296                           end
+297                           else
+298                           begin
+299        1/1                    sSCL &lt;= #1 &amp;fSCL[2:1] | &amp;fSCL[1:0] | (fSCL[2] &amp; fSCL[0]);
+300        1/1                    sSDA &lt;= #1 &amp;fSDA[2:1] | &amp;fSDA[1:0] | (fSDA[2] &amp; fSDA[0]);
+301                     
+302        1/1                    dSCL &lt;= #1 sSCL;
+303        1/1                    dSDA &lt;= #1 sSDA;
+304                           end
+305                     
+306                         // detect start condition =&gt; detect falling edge on SDA while SCL is high
+307                         // detect stop condition =&gt; detect rising edge on SDA while SCL is high
+308                         reg sta_condition;
+309                         reg sto_condition;
+310                         always @(posedge clk or negedge nReset)
+311        1/1                if (~nReset)
+312                           begin
+313        1/1                    sta_condition &lt;= #1 1'b0;
+314        1/1                    sto_condition &lt;= #1 1'b0;
+315                           end
+316        1/1                else if (rst)
+317                           begin
+318        1/1                    sta_condition &lt;= #1 1'b0;
+319        1/1                    sto_condition &lt;= #1 1'b0;
+320                           end
+321                           else
+322                           begin
+323        1/1                    sta_condition &lt;= #1 ~sSDA &amp;  dSDA &amp; sSCL;
+324        1/1                    sto_condition &lt;= #1  sSDA &amp; ~dSDA &amp; sSCL;
+325                           end
+326                     
+327                     
+328                         // generate i2c bus busy signal
+329                         always @(posedge clk or negedge nReset)
+330        2/2                if      (!nReset) busy &lt;= #1 1'b0;
+331        2/2                else if (rst    ) busy &lt;= #1 1'b0;
+332        1/1                else              busy &lt;= #1 (sta_condition | busy) &amp; ~sto_condition;
+333                     
+334                     
+335                         // generate arbitration lost signal
+336                         // aribitration lost when:
+337                         // 1) master drives SDA high, but the i2c bus is low
+338                         // 2) stop detected while not requested
+339                         reg cmd_stop;
+340                         always @(posedge clk or negedge nReset)
+341        1/1                if (~nReset)
+342        1/1                    cmd_stop &lt;= #1 1'b0;
+343        1/1                else if (rst)
+344        1/1                    cmd_stop &lt;= #1 1'b0;
+345        1/1                else if (clk_en)
+346        1/1                    cmd_stop &lt;= #1 cmd == `I2C_CMD_STOP;
+                        MISSING_ELSE
+347                     
+348                         always @(posedge clk or negedge nReset)
+349        1/1                if (~nReset)
+350        1/1                    al &lt;= #1 1'b0;
+351        1/1                else if (rst)
+352        1/1                    al &lt;= #1 1'b0;
+353                           else
+354        1/1                    al &lt;= #1 (sda_chk &amp; ~sSDA &amp; sda_oen) | (|c_state &amp; sto_condition &amp; ~cmd_stop);
+355                     
+356                     
+357                         // generate dout signal (store SDA on rising edge of SCL)
+358                         always @(posedge clk)
+359        2/2                if (sSCL &amp; ~dSCL) dout &lt;= #1 sSDA;
+                        MISSING_ELSE
+360                     
+361                     
+362                         // generate statemachine
+363                     
+364                         // nxt_state decoder
+365                         parameter [17:0] idle    = 18'b0_0000_0000_0000_0000;
+366                         parameter [17:0] start_a = 18'b0_0000_0000_0000_0001;
+367                         parameter [17:0] start_b = 18'b0_0000_0000_0000_0010;
+368                         parameter [17:0] start_c = 18'b0_0000_0000_0000_0100;
+369                         parameter [17:0] start_d = 18'b0_0000_0000_0000_1000;
+370                         parameter [17:0] start_e = 18'b0_0000_0000_0001_0000;
+371                         parameter [17:0] stop_a  = 18'b0_0000_0000_0010_0000;
+372                         parameter [17:0] stop_b  = 18'b0_0000_0000_0100_0000;
+373                         parameter [17:0] stop_c  = 18'b0_0000_0000_1000_0000;
+374                         parameter [17:0] stop_d  = 18'b0_0000_0001_0000_0000;
+375                         parameter [17:0] rd_a    = 18'b0_0000_0010_0000_0000;
+376                         parameter [17:0] rd_b    = 18'b0_0000_0100_0000_0000;
+377                         parameter [17:0] rd_c    = 18'b0_0000_1000_0000_0000;
+378                         parameter [17:0] rd_d    = 18'b0_0001_0000_0000_0000;
+379                         parameter [17:0] wr_a    = 18'b0_0010_0000_0000_0000;
+380                         parameter [17:0] wr_b    = 18'b0_0100_0000_0000_0000;
+381                         parameter [17:0] wr_c    = 18'b0_1000_0000_0000_0000;
+382                         parameter [17:0] wr_d    = 18'b1_0000_0000_0000_0000;
+383                     
+384                         always @(posedge clk or negedge nReset)
+385        1/1                if (!nReset)
+386                           begin
+387        1/1                    c_state &lt;= #1 idle;
+388        1/1                    cmd_ack &lt;= #1 1'b0;
+389        1/1                    scl_oen &lt;= #1 1'b1;
+390        1/1                    sda_oen &lt;= #1 1'b1;
+391        1/1                    sda_chk &lt;= #1 1'b0;
+392                           end
+393        1/1                else if (rst | al)
+394                           begin
+395        1/1                    c_state &lt;= #1 idle;
+396        1/1                    cmd_ack &lt;= #1 1'b0;
+397        1/1                    scl_oen &lt;= #1 1'b1;
+398        1/1                    sda_oen &lt;= #1 1'b1;
+399        1/1                    sda_chk &lt;= #1 1'b0;
+400                           end
+401                           else
+402                           begin
+403        1/1                    cmd_ack   &lt;= #1 1'b0; // default no command acknowledge + assert cmd_ack only 1clk cycle
+404                     
+405        1/1                    if (clk_en)
+406        1/1                        case (c_state) // synopsys full_case parallel_case
+407                                         // idle state
+408                                         idle:
+409                                         begin
+410        1/1                                  case (cmd) // synopsys full_case parallel_case
+411        1/1                                       `I2C_CMD_START: c_state &lt;= #1 start_a;
+412        1/1                                       `I2C_CMD_STOP:  c_state &lt;= #1 stop_a;
+413        1/1                                       `I2C_CMD_WRITE: c_state &lt;= #1 wr_a;
+414        1/1                                       `I2C_CMD_READ:  c_state &lt;= #1 rd_a;
+415        1/1                                       default:        c_state &lt;= #1 idle;
+416                                             endcase
+417                     
+418        1/1                                  scl_oen &lt;= #1 scl_oen; // keep SCL in same state
+419        1/1                                  sda_oen &lt;= #1 sda_oen; // keep SDA in same state
+420        1/1                                  sda_chk &lt;= #1 1'b0;    // don't check SDA output
+421                                         end
+422                     
+423                                         // start
+424                                         start_a:
+425                                         begin
+426        1/1                                  c_state &lt;= #1 start_b;
+427        1/1                                  scl_oen &lt;= #1 scl_oen; // keep SCL in same state
+428        1/1                                  sda_oen &lt;= #1 1'b1;    // set SDA high
+429        1/1                                  sda_chk &lt;= #1 1'b0;    // don't check SDA output
+430                                         end
+431                     
+432                                         start_b:
+433                                         begin
+434        1/1                                  c_state &lt;= #1 start_c;
+435        1/1                                  scl_oen &lt;= #1 1'b1; // set SCL high
+436        1/1                                  sda_oen &lt;= #1 1'b1; // keep SDA high
+437        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+438                                         end
+439                     
+440                                         start_c:
+441                                         begin
+442        1/1                                  c_state &lt;= #1 start_d;
+443        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+444        1/1                                  sda_oen &lt;= #1 1'b0; // set SDA low
+445        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+446                                         end
+447                     
+448                                         start_d:
+449                                         begin
+450        1/1                                  c_state &lt;= #1 start_e;
+451        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+452        1/1                                  sda_oen &lt;= #1 1'b0; // keep SDA low
+453        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+454                                         end
+455                     
+456                                         start_e:
+457                                         begin
+458        1/1                                  c_state &lt;= #1 idle;
+459        1/1                                  cmd_ack &lt;= #1 1'b1;
+460        1/1                                  scl_oen &lt;= #1 1'b0; // set SCL low
+461        1/1                                  sda_oen &lt;= #1 1'b0; // keep SDA low
+462        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+463                                         end
+464                     
+465                                         // stop
+466                                         stop_a:
+467                                         begin
+468        1/1                                  c_state &lt;= #1 stop_b;
+469        1/1                                  scl_oen &lt;= #1 1'b0; // keep SCL low
+470        1/1                                  sda_oen &lt;= #1 1'b0; // set SDA low
+471        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+472                                         end
+473                     
+474                                         stop_b:
+475                                         begin
+476        1/1                                  c_state &lt;= #1 stop_c;
+477        1/1                                  scl_oen &lt;= #1 1'b1; // set SCL high
+478        1/1                                  sda_oen &lt;= #1 1'b0; // keep SDA low
+479        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+480                                         end
+481                     
+482                                         stop_c:
+483                                         begin
+484        1/1                                  c_state &lt;= #1 stop_d;
+485        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+486        1/1                                  sda_oen &lt;= #1 1'b0; // keep SDA low
+487        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+488                                         end
+489                     
+490                                         stop_d:
+491                                         begin
+492        1/1                                  c_state &lt;= #1 idle;
+493        1/1                                  cmd_ack &lt;= #1 1'b1;
+494        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+495        1/1                                  sda_oen &lt;= #1 1'b1; // set SDA high
+496        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+497                                         end
+498                     
+499                                         // read
+500                                         rd_a:
+501                                         begin
+502        1/1                                  c_state &lt;= #1 rd_b;
+503        1/1                                  scl_oen &lt;= #1 1'b0; // keep SCL low
+504        1/1                                  sda_oen &lt;= #1 1'b1; // tri-state SDA
+505        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+506                                         end
+507                     
+508                                         rd_b:
+509                                         begin
+510        1/1                                  c_state &lt;= #1 rd_c;
+511        1/1                                  scl_oen &lt;= #1 1'b1; // set SCL high
+512        1/1                                  sda_oen &lt;= #1 1'b1; // keep SDA tri-stated
+513        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+514                                         end
+515                     
+516                                         rd_c:
+517                                         begin
+518        1/1                                  c_state &lt;= #1 rd_d;
+519        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+520        1/1                                  sda_oen &lt;= #1 1'b1; // keep SDA tri-stated
+521        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+522                                         end
+523                     
+524                                         rd_d:
+525                                         begin
+526        1/1                                  c_state &lt;= #1 idle;
+527        1/1                                  cmd_ack &lt;= #1 1'b1;
+528        1/1                                  scl_oen &lt;= #1 1'b0; // set SCL low
+529        1/1                                  sda_oen &lt;= #1 1'b1; // keep SDA tri-stated
+530        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output
+531                                         end
+532                     
+533                                         // write
+534                                         wr_a:
+535                                         begin
+536        1/1                                  c_state &lt;= #1 wr_b;
+537        1/1                                  scl_oen &lt;= #1 1'b0; // keep SCL low
+538        1/1                                  sda_oen &lt;= #1 din;  // set SDA
+539        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output (SCL low)
+540                                         end
+541                     
+542                                         wr_b:
+543                                         begin
+544        1/1                                  c_state &lt;= #1 wr_c;
+545        1/1                                  scl_oen &lt;= #1 1'b1; // set SCL high
+546        1/1                                  sda_oen &lt;= #1 din;  // keep SDA
+547        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output yet
+548                                                                 // allow some time for SDA and SCL to settle
+549                                         end
+550                     
+551                                         wr_c:
+552                                         begin
+553        1/1                                  c_state &lt;= #1 wr_d;
+554        1/1                                  scl_oen &lt;= #1 1'b1; // keep SCL high
+555        1/1                                  sda_oen &lt;= #1 din;
+556        1/1                                  sda_chk &lt;= #1 1'b1; // check SDA output
+557                                         end
+558                     
+559                                         wr_d:
+560                                         begin
+561        1/1                                  c_state &lt;= #1 idle;
+562        1/1                                  cmd_ack &lt;= #1 1'b1;
+563        1/1                                  scl_oen &lt;= #1 1'b0; // set SCL low
+564        1/1                                  sda_oen &lt;= #1 din;
+565        1/1                                  sda_chk &lt;= #1 1'b0; // don't check SDA output (SCL low)
+566                                         end
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+                        MISSING_ELSE
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod5.html" >i2c_master_bit_ctrl</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">Conditions</td><td>8</td><td>7</td><td>87.50</td></tr>
+<tr class="s8"><td class="lf">Logical</td><td>8</td><td>7</td><td>87.50</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       214
+ EXPRESSION (rst || ((~|cnt)) || ((!ena)) || scl_sync)
+             -1-    ----2----    ----3---    ----4---
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       256
+ EXPRESSION (rst || ((!ena)))
+             -1-    ----2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod5.html" >i2c_master_bit_ctrl</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s9">
+<td>Branches</td>
+<td></td>
+<td class="rt">61</td>
+<td class="rt">60</td>
+<td class="rt">98.36 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">199</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">209</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">236</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">255</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">262</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">281</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">311</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">330</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">341</td>
+<td class="rt">4</td>
+<td class="rt">4</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">349</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">359</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s9">
+<td>IF</td>
+<td class="rt">385</td>
+<td class="rt">26</td>
+<td class="rt">25</td>
+<td class="rt">96.15 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+199              if (!nReset) slave_wait <= 1'b0;
+                 <font color = "green">-1-</font>  
+           <font color = "green">      ==></font>
+200              else         slave_wait <= (scl_oen & ~dscl_oen & ~sSCL) | (slave_wait & ~sSCL);
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+209              if (~nReset)
+                 <font color = "green">-1-</font>  
+210              begin
+211                  cnt    <= #1 16'h0;
+           <font color = "green">          ==></font>
+212                  clk_en <= #1 1'b1;
+213              end
+214              else if (rst || ~|cnt || !ena || scl_sync)
+                      <font color = "green">-2-</font>  
+215              begin
+216                  cnt    <= #1 clk_cnt;
+           <font color = "green">          ==></font>
+217                  clk_en <= #1 1'b1;
+218              end
+219              else if (slave_wait)
+                      <font color = "green">-3-</font>  
+220              begin
+221                  cnt    <= #1 cnt;
+           <font color = "green">          ==></font>
+222                  clk_en <= #1 1'b0;    
+223              end
+224              else
+225              begin
+226                  cnt    <= #1 cnt - 16'h1;
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+236              if (!nReset)
+                 <font color = "green">-1-</font>  
+237              begin
+238                  cSCL <= #1 2'b00;
+           <font color = "green">          ==></font>
+239                  cSDA <= #1 2'b00;
+240              end
+241              else if (rst)
+                      <font color = "green">-2-</font>  
+242              begin
+243                  cSCL <= #1 2'b00;
+           <font color = "green">          ==></font>
+244                  cSDA <= #1 2'b00;
+245              end
+246              else
+247              begin
+248                  cSCL <= {cSCL[0],scl_i};
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+255              if      (!nReset     ) filter_cnt <= 14'h0;
+                 <font color = "green">-1-</font>  
+           <font color = "green">      ==></font>
+256              else if (rst || !ena ) filter_cnt <= 14'h0;
+                      <font color = "green">-2-</font>  
+           <font color = "green">      ==></font>
+257              else if (~|filter_cnt) filter_cnt <= clk_cnt >> 2; //16x I2C bus frequency
+                      <font color = "green">-3-</font>  
+           <font color = "green">      ==></font>
+258              else                   filter_cnt <= filter_cnt -1;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+262              if (!nReset)
+                 <font color = "green">-1-</font>  
+263              begin
+264                  fSCL <= 3'b111;
+           <font color = "green">          ==></font>
+265                  fSDA <= 3'b111;
+266              end
+267              else if (rst)
+                      <font color = "green">-2-</font>  
+268              begin
+269                  fSCL <= 3'b111;
+           <font color = "green">          ==></font>
+270                  fSDA <= 3'b111;
+271              end
+272              else if (~|filter_cnt)
+                      <font color = "green">-3-</font>  
+273              begin
+274                  fSCL <= {fSCL[1:0],cSCL[1]};
+           <font color = "green">          ==></font>
+275                  fSDA <= {fSDA[1:0],cSDA[1]};
+276              end
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+281              if (~nReset)
+                 <font color = "green">-1-</font>  
+282              begin
+283                  sSCL <= #1 1'b1;
+           <font color = "green">          ==></font>
+284                  sSDA <= #1 1'b1;
+285        
+286                  dSCL <= #1 1'b1;
+287                  dSDA <= #1 1'b1;
+288              end
+289              else if (rst)
+                      <font color = "green">-2-</font>  
+290              begin
+291                  sSCL <= #1 1'b1;
+           <font color = "green">          ==></font>
+292                  sSDA <= #1 1'b1;
+293        
+294                  dSCL <= #1 1'b1;
+295                  dSDA <= #1 1'b1;
+296              end
+297              else
+298              begin
+299                  sSCL <= #1 &fSCL[2:1] | &fSCL[1:0] | (fSCL[2] & fSCL[0]);
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+311              if (~nReset)
+                 <font color = "green">-1-</font>  
+312              begin
+313                  sta_condition <= #1 1'b0;
+           <font color = "green">          ==></font>
+314                  sto_condition <= #1 1'b0;
+315              end
+316              else if (rst)
+                      <font color = "green">-2-</font>  
+317              begin
+318                  sta_condition <= #1 1'b0;
+           <font color = "green">          ==></font>
+319                  sto_condition <= #1 1'b0;
+320              end
+321              else
+322              begin
+323                  sta_condition <= #1 ~sSDA &  dSDA & sSCL;
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+330              if      (!nReset) busy <= #1 1'b0;
+                 <font color = "green">-1-</font>  
+           <font color = "green">      ==></font>
+331              else if (rst    ) busy <= #1 1'b0;
+                      <font color = "green">-2-</font>  
+           <font color = "green">      ==></font>
+332              else              busy <= #1 (sta_condition | busy) & ~sto_condition;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+341              if (~nReset)
+                 <font color = "green">-1-</font>  
+342                  cmd_stop <= #1 1'b0;
+           <font color = "green">          ==></font>
+343              else if (rst)
+                      <font color = "green">-2-</font>  
+344                  cmd_stop <= #1 1'b0;
+           <font color = "green">          ==></font>
+345              else if (clk_en)
+                      <font color = "green">-3-</font>  
+346                  cmd_stop <= #1 cmd == `I2C_CMD_STOP;
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+349              if (~nReset)
+                 <font color = "green">-1-</font>  
+350                  al <= #1 1'b0;
+           <font color = "green">          ==></font>
+351              else if (rst)
+                      <font color = "green">-2-</font>  
+352                  al <= #1 1'b0;
+           <font color = "green">          ==></font>
+353              else
+354                  al <= #1 (sda_chk & ~sSDA & sda_oen) | (|c_state & sto_condition & ~cmd_stop);
+           <font color = "green">          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+359              if (sSCL & ~dSCL) dout <= #1 sSDA;
+                 <font color = "green">-1-</font>  
+           <font color = "green">      ==></font>
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+385              if (!nReset)
+                 <font color = "green">-1-</font>  
+386              begin
+387                  c_state <= #1 idle;
+           <font color = "green">          ==></font>
+388                  cmd_ack <= #1 1'b0;
+389                  scl_oen <= #1 1'b1;
+390                  sda_oen <= #1 1'b1;
+391                  sda_chk <= #1 1'b0;
+392              end
+393              else if (rst | al)
+                      <font color = "green">-2-</font>  
+394              begin
+395                  c_state <= #1 idle;
+           <font color = "green">          ==></font>
+396                  cmd_ack <= #1 1'b0;
+397                  scl_oen <= #1 1'b1;
+398                  sda_oen <= #1 1'b1;
+399                  sda_chk <= #1 1'b0;
+400              end
+401              else
+402              begin
+403                  cmd_ack   <= #1 1'b0; // default no command acknowledge + assert cmd_ack only 1clk cycle
+404        
+405                  if (clk_en)
+                     <font color = "green">-3-</font>  
+406                      case (c_state) // synopsys full_case parallel_case
+                         <font color = "red">-4-</font>  
+                         MISSING_ELSE
+           <font color = "green">              ==></font>
+407                            // idle state
+408                            idle:
+409                            begin
+410                                case (cmd) // synopsys full_case parallel_case
+                                   <font color = "green">-5-</font>  
+411                                     `I2C_CMD_START: c_state <= #1 start_a;
+           <font color = "green">                             ==></font>
+412                                     `I2C_CMD_STOP:  c_state <= #1 stop_a;
+           <font color = "green">                             ==></font>
+413                                     `I2C_CMD_WRITE: c_state <= #1 wr_a;
+           <font color = "green">                             ==></font>
+414                                     `I2C_CMD_READ:  c_state <= #1 rd_a;
+           <font color = "green">                             ==></font>
+415                                     default:        c_state <= #1 idle;
+           <font color = "green">                             ==></font>
+416                                endcase
+417        
+418                                scl_oen <= #1 scl_oen; // keep SCL in same state
+419                                sda_oen <= #1 sda_oen; // keep SDA in same state
+420                                sda_chk <= #1 1'b0;    // don't check SDA output
+421                            end
+422        
+423                            // start
+424                            start_a:
+425                            begin
+426                                c_state <= #1 start_b;
+           <font color = "green">                        ==></font>
+427                                scl_oen <= #1 scl_oen; // keep SCL in same state
+428                                sda_oen <= #1 1'b1;    // set SDA high
+429                                sda_chk <= #1 1'b0;    // don't check SDA output
+430                            end
+431        
+432                            start_b:
+433                            begin
+434                                c_state <= #1 start_c;
+           <font color = "green">                        ==></font>
+435                                scl_oen <= #1 1'b1; // set SCL high
+436                                sda_oen <= #1 1'b1; // keep SDA high
+437                                sda_chk <= #1 1'b0; // don't check SDA output
+438                            end
+439        
+440                            start_c:
+441                            begin
+442                                c_state <= #1 start_d;
+           <font color = "green">                        ==></font>
+443                                scl_oen <= #1 1'b1; // keep SCL high
+444                                sda_oen <= #1 1'b0; // set SDA low
+445                                sda_chk <= #1 1'b0; // don't check SDA output
+446                            end
+447        
+448                            start_d:
+449                            begin
+450                                c_state <= #1 start_e;
+           <font color = "green">                        ==></font>
+451                                scl_oen <= #1 1'b1; // keep SCL high
+452                                sda_oen <= #1 1'b0; // keep SDA low
+453                                sda_chk <= #1 1'b0; // don't check SDA output
+454                            end
+455        
+456                            start_e:
+457                            begin
+458                                c_state <= #1 idle;
+           <font color = "green">                        ==></font>
+459                                cmd_ack <= #1 1'b1;
+460                                scl_oen <= #1 1'b0; // set SCL low
+461                                sda_oen <= #1 1'b0; // keep SDA low
+462                                sda_chk <= #1 1'b0; // don't check SDA output
+463                            end
+464        
+465                            // stop
+466                            stop_a:
+467                            begin
+468                                c_state <= #1 stop_b;
+           <font color = "green">                        ==></font>
+469                                scl_oen <= #1 1'b0; // keep SCL low
+470                                sda_oen <= #1 1'b0; // set SDA low
+471                                sda_chk <= #1 1'b0; // don't check SDA output
+472                            end
+473        
+474                            stop_b:
+475                            begin
+476                                c_state <= #1 stop_c;
+           <font color = "green">                        ==></font>
+477                                scl_oen <= #1 1'b1; // set SCL high
+478                                sda_oen <= #1 1'b0; // keep SDA low
+479                                sda_chk <= #1 1'b0; // don't check SDA output
+480                            end
+481        
+482                            stop_c:
+483                            begin
+484                                c_state <= #1 stop_d;
+           <font color = "green">                        ==></font>
+485                                scl_oen <= #1 1'b1; // keep SCL high
+486                                sda_oen <= #1 1'b0; // keep SDA low
+487                                sda_chk <= #1 1'b0; // don't check SDA output
+488                            end
+489        
+490                            stop_d:
+491                            begin
+492                                c_state <= #1 idle;
+           <font color = "green">                        ==></font>
+493                                cmd_ack <= #1 1'b1;
+494                                scl_oen <= #1 1'b1; // keep SCL high
+495                                sda_oen <= #1 1'b1; // set SDA high
+496                                sda_chk <= #1 1'b0; // don't check SDA output
+497                            end
+498        
+499                            // read
+500                            rd_a:
+501                            begin
+502                                c_state <= #1 rd_b;
+           <font color = "green">                        ==></font>
+503                                scl_oen <= #1 1'b0; // keep SCL low
+504                                sda_oen <= #1 1'b1; // tri-state SDA
+505                                sda_chk <= #1 1'b0; // don't check SDA output
+506                            end
+507        
+508                            rd_b:
+509                            begin
+510                                c_state <= #1 rd_c;
+           <font color = "green">                        ==></font>
+511                                scl_oen <= #1 1'b1; // set SCL high
+512                                sda_oen <= #1 1'b1; // keep SDA tri-stated
+513                                sda_chk <= #1 1'b0; // don't check SDA output
+514                            end
+515        
+516                            rd_c:
+517                            begin
+518                                c_state <= #1 rd_d;
+           <font color = "green">                        ==></font>
+519                                scl_oen <= #1 1'b1; // keep SCL high
+520                                sda_oen <= #1 1'b1; // keep SDA tri-stated
+521                                sda_chk <= #1 1'b0; // don't check SDA output
+522                            end
+523        
+524                            rd_d:
+525                            begin
+526                                c_state <= #1 idle;
+           <font color = "green">                        ==></font>
+527                                cmd_ack <= #1 1'b1;
+528                                scl_oen <= #1 1'b0; // set SCL low
+529                                sda_oen <= #1 1'b1; // keep SDA tri-stated
+530                                sda_chk <= #1 1'b0; // don't check SDA output
+531                            end
+532        
+533                            // write
+534                            wr_a:
+535                            begin
+536                                c_state <= #1 wr_b;
+           <font color = "green">                        ==></font>
+537                                scl_oen <= #1 1'b0; // keep SCL low
+538                                sda_oen <= #1 din;  // set SDA
+539                                sda_chk <= #1 1'b0; // don't check SDA output (SCL low)
+540                            end
+541        
+542                            wr_b:
+543                            begin
+544                                c_state <= #1 wr_c;
+           <font color = "green">                        ==></font>
+545                                scl_oen <= #1 1'b1; // set SCL high
+546                                sda_oen <= #1 din;  // keep SDA
+547                                sda_chk <= #1 1'b0; // don't check SDA output yet
+548                                                    // allow some time for SDA and SCL to settle
+549                            end
+550        
+551                            wr_c:
+552                            begin
+553                                c_state <= #1 wr_d;
+           <font color = "green">                        ==></font>
+554                                scl_oen <= #1 1'b1; // keep SCL high
+555                                sda_oen <= #1 din;
+556                                sda_chk <= #1 1'b1; // check SDA output
+557                            end
+558        
+559                            wr_d:
+560                            begin
+561                                c_state <= #1 idle;
+           <font color = "green">                        ==></font>
+562                                cmd_ack <= #1 1'b1;
+563                                scl_oen <= #1 1'b0; // set SCL low
+564                                sda_oen <= #1 din;
+565                                sda_chk <= #1 1'b0; // don't check SDA output (SCL low)
+566                            end
+                               MISSING_DEFAULT
+           <font color = "red">                    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>idle </td>
+<td align=center>4'b0001 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>idle </td>
+<td align=center>4'b0010 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>idle </td>
+<td align=center>4'b0100 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>idle </td>
+<td align=center>4'b1000 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>idle </td>
+<td align=center>default</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>start_a </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>start_b </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>start_c </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>start_d </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>start_e </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>stop_a </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>stop_b </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>stop_c </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>stop_d </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>rd_a </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>rd_b </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>rd_c </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>rd_d </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>wr_a </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>wr_b </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>wr_c </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>wr_d </td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>MISSING_DEFAULT</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_5">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_i2c_master_bit_ctrl">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

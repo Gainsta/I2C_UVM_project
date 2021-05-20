@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: i2c_master_top</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | groups | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_i2c_master_top'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_i2c_master_top')">i2c_master_top</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 93.58</td>
+<td class="s9 cl rt"><a href="mod0.html#Line" > 94.55</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Cond" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Branch" > 86.21</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/auto/vgr/users/dvoynish_n/svn/labs/i2c/rtl/verilog/i2c_master_top.v')">/auto/vgr/users/dvoynish_n/svn/labs/i2c/rtl/verilog/i2c_master_top.v</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod0.html#inst_tag_0"  onclick="showContent('inst_tag_0')">i2c_top.DUT</a></td>
+<td class="s9 cl rt"> 93.58</td>
+<td class="s9 cl rt"><a href="mod0.html#Line" > 94.55</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Cond" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Branch" > 86.21</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_i2c_master_top'>
+<hr>
+<a name="inst_tag_0"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_0" >i2c_top.DUT</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 93.58</td>
+<td class="s9 cl rt"><a href="mod0.html#Line" > 94.55</a></td>
+<td class="s10 cl rt"><a href="mod0.html#Cond" >100.00</a></td>
+<td class="s8 cl rt"><a href="mod0.html#Branch" > 86.21</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="s9 cl rt"> 95.01</td>
+<td class="s9 cl rt"> 99.05</td>
+<td class="s9 cl rt"> 90.91</td>
+<td class="s9 cl rt"> 95.08</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s10 cl rt">100.00</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s10 cl rt">100.00</td>
+<td><a href="mod3.html#inst_tag_3" >i2c_top</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod7.html#inst_tag_7" id="tag_urg_inst_7">byte_controller</a></td>
+<td class="s9 cl rt"> 95.12</td>
+<td class="s10 cl rt">100.00</td>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s9 cl rt"> 97.85</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_i2c_master_top'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod0.html" >i2c_master_top</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s9"><td class="lf">TOTAL</td><td></td><td>55</td><td>52</td><td>94.55</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>159</td><td>1</td><td>1</td><td>100.00</td></tr>
+<tr class="s6"><td class="lf">ALWAYS</td><td>164</td><td>9</td><td>6</td><td>66.67</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>178</td><td>15</td><td>15</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>202</td><td>11</td><td>11</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>261</td><td>14</td><td>14</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>285</td><td>5</td><td>5</td><td>100.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+158                     	always @(posedge wb_clk_i)
+159        1/1          	  wb_ack_o &lt;= #1 wb_cyc_i &amp; wb_stb_i &amp; ~wb_ack_o; // because timing is always honored
+160                     
+161                     	// assign DAT_O
+162                     	always @(posedge wb_clk_i)
+163                     	begin
+164        1/1          	  case (wb_adr_i) // synopsys parallel_case
+165        1/1          	    3'b000: wb_dat_o &lt;= #1 prer[ 7:0];
+166        1/1          	    3'b001: wb_dat_o &lt;= #1 prer[15:8];
+167        1/1          	    3'b010: wb_dat_o &lt;= #1 ctr;
+168        1/1          	    3'b011: wb_dat_o &lt;= #1 rxr; // write is transmit register (txr)
+169        1/1          	    3'b100: wb_dat_o &lt;= #1 sr;  // write is command register (cr)
+170        <font color = "red">0/1     ==>  	    3'b101: wb_dat_o &lt;= #1 txr;</font>
+171        <font color = "red">0/1     ==>  	    3'b110: wb_dat_o &lt;= #1 cr;</font>
+172        <font color = "red">0/1     ==>  	    3'b111: wb_dat_o &lt;= #1 0;   // reserved</font>
+                   <font color = "red">==>  MISSING_DEFAULT</font>
+173                     	  endcase
+174                     	end
+175                     
+176                     	// generate registers
+177                     	always @(posedge wb_clk_i or negedge rst_i)
+178        1/1          	  if (!rst_i)
+179                     	    begin
+180        1/1          	        prer &lt;= #1 16'hffff;
+181        1/1          	        ctr  &lt;= #1  8'h0;
+182        1/1          	        txr  &lt;= #1  8'h0;
+183                     	    end
+184        1/1          	  else if (wb_rst_i)
+185                     	    begin
+186        1/1          	        prer &lt;= #1 16'hffff;
+187        1/1          	        ctr  &lt;= #1  8'h0;
+188        1/1          	        txr  &lt;= #1  8'h0;
+189                     	    end
+190                     	  else
+191        1/1          	    if (wb_wacc)
+192        1/1          	      case (wb_adr_i) // synopsys parallel_case
+193        1/1          	         3'b000 : prer [ 7:0] &lt;= #1 wb_dat_i;
+194        1/1          	         3'b001 : prer [15:8] &lt;= #1 wb_dat_i;
+195        1/1          	         3'b010 : ctr         &lt;= #1 wb_dat_i;
+196        1/1          	         3'b011 : txr         &lt;= #1 wb_dat_i;
+197        1/1          	         default: ;
+                        MISSING_ELSE
+198                     	      endcase
+199                     
+200                     	// generate command register (special case)
+201                     	always @(posedge wb_clk_i or negedge rst_i)
+202        1/1          	  if (!rst_i)
+203        1/1          	    cr &lt;= #1 8'h0;
+204        1/1          	  else if (wb_rst_i)
+205        1/1          	    cr &lt;= #1 8'h0;
+206        1/1          	  else if (wb_wacc)
+207                     	    begin
+208        1/1          	        if (core_en &amp; (wb_adr_i == 3'b100) )
+209        1/1          	          cr &lt;= #1 wb_dat_i;
+                        MISSING_ELSE
+210                     	    end
+211                     	  else
+212                     	    begin
+213        1/1          	        if (done | i2c_al)
+214        1/1          	          cr[7:4] &lt;= #1 4'h0;           // clear command bits when done
+                        MISSING_ELSE
+215                     	                                        // or when aribitration lost
+216        1/1          	        cr[2:1] &lt;= #1 2'b0;             // reserved bits
+217        1/1          	        cr[0]   &lt;= #1 1'b0;             // clear IRQ_ACK bit
+218                     	    end
+219                     
+220                     
+221                     	// decode command register
+222                     	wire sta  = cr[7];
+223                     	wire sto  = cr[6];
+224                     	wire rd   = cr[5];
+225                     	wire wr   = cr[4];
+226                     	wire ack  = cr[3];
+227                     	wire iack = cr[0];
+228                     
+229                     	// decode control register
+230                     	assign core_en = ctr[7];
+231                     	assign ien = ctr[6];
+232                     
+233                     	// hookup byte controller block
+234                     	i2c_master_byte_ctrl byte_controller (
+235                     		.clk      ( wb_clk_i     ),
+236                     		.rst      ( wb_rst_i     ),
+237                     		.nReset   ( rst_i        ),
+238                     		.ena      ( core_en      ),
+239                     		.clk_cnt  ( prer         ),
+240                     		.start    ( sta          ),
+241                     		.stop     ( sto          ),
+242                     		.read     ( rd           ),
+243                     		.write    ( wr           ),
+244                     		.ack_in   ( ack          ),
+245                     		.din      ( txr          ),
+246                     		.cmd_ack  ( done         ),
+247                     		.ack_out  ( irxack       ),
+248                     		.dout     ( rxr          ),
+249                     		.i2c_busy ( i2c_busy     ),
+250                     		.i2c_al   ( i2c_al       ),
+251                     		.scl_i    ( scl_pad_i    ),
+252                     		.scl_o    ( scl_pad_o    ),
+253                     		.scl_oen  ( scl_padoen_o ),
+254                     		.sda_i    ( sda_pad_i    ),
+255                     		.sda_o    ( sda_pad_o    ),
+256                     		.sda_oen  ( sda_padoen_o )
+257                     	);
+258                     
+259                     	// status register block + interrupt request signal
+260                     	always @(posedge wb_clk_i or negedge rst_i)
+261        1/1          	  if (!rst_i)
+262                     	    begin
+263        1/1          	        al       &lt;= #1 1'b0;
+264        1/1          	        rxack    &lt;= #1 1'b0;
+265        1/1          	        tip      &lt;= #1 1'b0;
+266        1/1          	        irq_flag &lt;= #1 1'b0;
+267                     	    end
+268        1/1          	  else if (wb_rst_i)
+269                     	    begin
+270        1/1          	        al       &lt;= #1 1'b0;
+271        1/1          	        rxack    &lt;= #1 1'b0;
+272        1/1          	        tip      &lt;= #1 1'b0;
+273        1/1          	        irq_flag &lt;= #1 1'b0;
+274                     	    end
+275                     	  else
+276                     	    begin
+277        1/1          	        al       &lt;= #1 i2c_al | (al &amp; ~sta);
+278        1/1          	        rxack    &lt;= #1 irxack;
+279        1/1          	        tip      &lt;= #1 (rd | wr);
+280        1/1          	        irq_flag &lt;= #1 (done | i2c_al | irq_flag) &amp; ~iack; // interrupt request flag is always generated
+281                     	    end
+282                     
+283                     	// generate interrupt request signals
+284                     	always @(posedge wb_clk_i or negedge rst_i)
+285        1/1          	  if (!rst_i)
+286        1/1          	    wb_inta_o &lt;= #1 1'b0;
+287        1/1          	  else if (wb_rst_i)
+288        1/1          	    wb_inta_o &lt;= #1 1'b0;
+289                     	  else
+290        1/1          	    wb_inta_o &lt;= #1 irq_flag &amp;&amp; ien; // interrupt signal is only generated when IEN (interrupt enable bit is set)
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod0.html" >i2c_master_top</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s10"><td class="lf">Conditions</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">Logical</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       290
+ EXPRESSION (irq_flag &amp;&amp; ien)
+             ----1---    -2-
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod0.html" >i2c_master_top</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s8">
+<td>Branches</td>
+<td></td>
+<td class="rt">29</td>
+<td class="rt">25</td>
+<td class="rt">86.21 </td>
+</tr><tr class="s5">
+<td>CASE</td>
+<td class="rt">164</td>
+<td class="rt">9</td>
+<td class="rt">5</td>
+<td class="rt">55.56 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">178</td>
+<td class="rt">8</td>
+<td class="rt">8</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">202</td>
+<td class="rt">6</td>
+<td class="rt">6</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">261</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">285</td>
+<td class="rt">3</td>
+<td class="rt">3</td>
+<td class="rt">100.00</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+164        	  case (wb_adr_i) // synopsys parallel_case
+           	  <font color = "red">-1-</font>  
+165        	    3'b000: wb_dat_o <= #1 prer[ 7:0];
+           <font color = "green">	    ==></font>
+166        	    3'b001: wb_dat_o <= #1 prer[15:8];
+           <font color = "green">	    ==></font>
+167        	    3'b010: wb_dat_o <= #1 ctr;
+           <font color = "green">	    ==></font>
+168        	    3'b011: wb_dat_o <= #1 rxr; // write is transmit register (txr)
+           <font color = "green">	    ==></font>
+169        	    3'b100: wb_dat_o <= #1 sr;  // write is command register (cr)
+           <font color = "green">	    ==></font>
+170        	    3'b101: wb_dat_o <= #1 txr;
+           <font color = "red">	    ==></font>
+171        	    3'b110: wb_dat_o <= #1 cr;
+           <font color = "red">	    ==></font>
+172        	    3'b111: wb_dat_o <= #1 0;   // reserved
+           <font color = "red">	    ==></font>
+           	    MISSING_DEFAULT
+           <font color = "red">	    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>3'b000 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b001 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b010 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b011 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>3'b100 </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b101 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b110 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>3'b111 </td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>MISSING_DEFAULT</td>
+<td>Not Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+178        	  if (!rst_i)
+           	  <font color = "green">-1-</font>  
+179        	    begin
+180        	        prer <= #1 16'hffff;
+           <font color = "green">	        ==></font>
+181        	        ctr  <= #1  8'h0;
+182        	        txr  <= #1  8'h0;
+183        	    end
+184        	  else if (wb_rst_i)
+           	       <font color = "green">-2-</font>  
+185        	    begin
+186        	        prer <= #1 16'hffff;
+           <font color = "green">	        ==></font>
+187        	        ctr  <= #1  8'h0;
+188        	        txr  <= #1  8'h0;
+189        	    end
+190        	  else
+191        	    if (wb_wacc)
+           	    <font color = "green">-3-</font>  
+192        	      case (wb_adr_i) // synopsys parallel_case
+           	      <font color = "green">-4-</font>  
+           	      MISSING_ELSE
+           <font color = "green">	      ==></font>
+193        	         3'b000 : prer [ 7:0] <= #1 wb_dat_i;
+           <font color = "green">	         ==></font>
+194        	         3'b001 : prer [15:8] <= #1 wb_dat_i;
+           <font color = "green">	         ==></font>
+195        	         3'b010 : ctr         <= #1 wb_dat_i;
+           <font color = "green">	         ==></font>
+196        	         3'b011 : txr         <= #1 wb_dat_i;
+           <font color = "green">	         ==></font>
+197        	         default: ;
+           <font color = "green">	         ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>3'b000 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>3'b001 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>3'b010 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>3'b011 </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>default</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+202        	  if (!rst_i)
+           	  <font color = "green">-1-</font>  
+203        	    cr <= #1 8'h0;
+           <font color = "green">	    ==></font>
+204        	  else if (wb_rst_i)
+           	       <font color = "green">-2-</font>  
+205        	    cr <= #1 8'h0;
+           <font color = "green">	    ==></font>
+206        	  else if (wb_wacc)
+           	       <font color = "green">-3-</font>  
+207        	    begin
+208        	        if (core_en & (wb_adr_i == 3'b100) )
+           	        <font color = "green">-4-</font>  
+209        	          cr <= #1 wb_dat_i;
+           <font color = "green">	          ==></font>
+           	          MISSING_ELSE
+           <font color = "green">	          ==></font>
+210        	    end
+211        	  else
+212        	    begin
+213        	        if (done | i2c_al)
+           	        <font color = "green">-5-</font>  
+214        	          cr[7:4] <= #1 4'h0;           // clear command bits when done
+           <font color = "green">	          ==></font>
+           	          MISSING_ELSE
+           <font color = "green">	          ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+261        	  if (!rst_i)
+           	  <font color = "green">-1-</font>  
+262        	    begin
+263        	        al       <= #1 1'b0;
+           <font color = "green">	        ==></font>
+264        	        rxack    <= #1 1'b0;
+265        	        tip      <= #1 1'b0;
+266        	        irq_flag <= #1 1'b0;
+267        	    end
+268        	  else if (wb_rst_i)
+           	       <font color = "green">-2-</font>  
+269        	    begin
+270        	        al       <= #1 1'b0;
+           <font color = "green">	        ==></font>
+271        	        rxack    <= #1 1'b0;
+272        	        tip      <= #1 1'b0;
+273        	        irq_flag <= #1 1'b0;
+274        	    end
+275        	  else
+276        	    begin
+277        	        al       <= #1 i2c_al | (al & ~sta);
+           <font color = "green">	        ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+285        	  if (!rst_i)
+           	  <font color = "green">-1-</font>  
+286        	    wb_inta_o <= #1 1'b0;
+           <font color = "green">	    ==></font>
+287        	  else if (wb_rst_i)
+           	       <font color = "green">-2-</font>  
+288        	    wb_inta_o <= #1 1'b0;
+           <font color = "green">	    ==></font>
+289        	  else
+290        	    wb_inta_o <= #1 irq_flag && ien; // interrupt signal is only generated when IEN (interrupt enable bit is set)
+           <font color = "green">	    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_0">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_i2c_master_top">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>
